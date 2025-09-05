@@ -8,6 +8,26 @@
     <meta http-equiv="Content-Language" content="en-us" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" media="screen" href="styles/screen.css" />
+    <style>
+        /* Quick inline style for layout */
+        .profile-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .profile-text {
+            flex: 2;
+        }
+        .profile-photo {
+            flex: 1;
+            text-align: right;
+        }
+        .profile-photo img {
+            max-width: 180px;
+            height: auto;
+            border-radius: 6px;
+        }
+    </style>
 </head>
 
 <body class="twocolumn">
@@ -50,19 +70,21 @@
         <hr />
 
         <div id="main">
-            <!-- Profile photo added here -->
-            <div class="main-photo-large" style="text-align:center; margin-bottom:20px;">
-                <img src="profile_photo2.jpg" alt="Profile photo of Minwook Kang" style="max-width:250px; height:auto; border-radius:8px;" />
+            <div class="profile-container">
+                <div class="profile-text">
+                    <p>
+                        I (<b>Minwook Kang</b>) am an associate professor in the Department of Economics at Korea University.
+                        My research interest is in Macro-finance, Public Finance, and Economic Theory. My current research
+                        focuses on inflation-linked bonds in incomplete financial markets and endogenous sophistication in a
+                        consumption-savings model. I completed my Ph.D. in Economics at Cornell University. I earned my B.S. in
+                        Electrical Engineering at Seoul National University. Before joining Korea University, I was an assistant
+                        professor at Nanyang Technological University.
+                    </p>
+                </div>
+                <div class="profile-photo">
+                    <img src="profile_photo2.jpg" alt="Profile photo of Minwook Kang" />
+                </div>
             </div>
-
-            <p>
-                I (<b>Minwook Kang</b>) am an associate professor in the Department of Economics at Korea University.
-                My research interest is in Macro-finance, Public Finance, and Economic Theory. My current research
-                focuses on inflation-linked bonds in incomplete financial markets and endogenous sophistication in a
-                consumption-savings model. I completed my Ph.D. in Economics at Cornell University. I earned my B.S. in
-                Electrical Engineering at Seoul National University. Before joining Korea University, I was an assistant
-                professor at Nanyang Technological University.
-            </p>
         </div>
 
         <hr />
@@ -85,3 +107,4 @@
 
 </body>
 </html>
+
